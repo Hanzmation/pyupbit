@@ -1,4 +1,4 @@
-from pyupbit.quotation_api import *
+from myupbit.quotation_api import *
 
 
 def test_get_tickers_defaults():

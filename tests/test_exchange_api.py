@@ -1,6 +1,6 @@
 import pytest
 
-from pyupbit.exchange_api import *
+from myupbit.exchange_api import *
 
 
 @pytest.mark.parametrize(

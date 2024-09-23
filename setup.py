@@ -15,7 +15,7 @@ author_email = 'brayden.jo@outlook.com, ' \
                'pyquant@outlook.com'
 
 setuptools.setup(
-    name='pyupbit',
+    name='myupbit',
     version='0.2.34',
     author='Jonghun Yoo, Brayden Jo',
     author_email=author_email,

@@ -1,8 +1,8 @@
 import pytest
 from unittest.mock import Mock
 from requests.models import Response
-from pyupbit.errors import *
-from pyupbit.errors import (
+from myupbit.errors import *
+from myupbit.errors import (
     UpbitErrorMixin,
     BAD_REQUESTS,
     UNAUTHORIZED,

@@ -1,7 +1,7 @@
 import pytest
-from pyupbit.request_api import _parse
-from pyupbit.request_api import _call_public_api
-from pyupbit.errors import RemainingReqParsingError
+from myupbit.request_api import _parse
+from myupbit.request_api import _call_public_api
+from myupbit.errors import RemainingReqParsingError
 
 
 def test_parse_remaining_req_defaults():

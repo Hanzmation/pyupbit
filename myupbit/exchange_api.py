@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-pyupbit.exchange_api
+myupbit.exchange_api
 
 This module provides exchange api of the Upbit API.
 """
@@ -12,7 +12,10 @@ import re
 import uuid
 import hashlib
 from urllib.parse import urlencode
-from pyupbit.request_api import _send_get_request, _send_post_request, _send_delete_request
+from myupbit.request_api import _send_get_request, _send_post_request, _send_delete_request
+
+def test_hello():
+    print("test hello")
 
 
 def get_tick_size(price, method="floor"):

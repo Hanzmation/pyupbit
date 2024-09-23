@@ -1,4 +1,4 @@
-import pyupbit
+import myupbit
 
-df = pyupbit.get_ohlcv("KRW-BTC", "month")
+df = myupbit.get_ohlcv("KRW-BTC", "month")
 print(df)

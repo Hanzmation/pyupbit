@@ -10,7 +10,7 @@ https://pyupbit.readthedocs.io/en/latest/
 파이썬 개발 환경으로 최신 버전의 Anaconda를 설치하세요. (Python3 버전용)
 
 ```sh
-pip install pyupbit
+pip install myupbit
 ```
 
 pyjwt 모듈을 필요로 합니다. (pyjwt >= 2.0)
@@ -20,8 +20,9 @@ pip install pyjwt
 ```
 
 ## Import
+
 ```python
-import pyupbit
+import myupbit
 ```
 
 ## Quotation API
@@ -166,11 +167,11 @@ print(pyupbit.get_orderbook(ticker=["KRW-BTC", "KRW-XRP"]))
 Access Key와 Sercret Key를 사용해서 `Upbit` 객체를 생성합니다. 이는 웹페이지에서 로그인하는 것과 같습니다.
 
 ```python
-import pyupbit
+import myupbit
 
-access = "73kVqowGQOGEjdR31221j31j2ifekjkgjekgjekg"          # 본인 값으로 변경
-secret = "egjekgj3iekeEEkej3i3j3iejjwiEejiejeEeijg"          # 본인 값으로 변경
-upbit = pyupbit.Upbit(access, secret)
+access = "73kVqowGQOGEjdR31221j31j2ifekjkgjekgjekg"  # 본인 값으로 변경
+secret = "egjekgj3iekeEEkej3i3j3iejjwiEejiejeEeijg"  # 본인 값으로 변경
+upbit = myupbit.Upbit(access, secret)
 ```
 
 #### 잔고 조회
@@ -361,7 +362,7 @@ WebSocket을 이용해서 `현재가`, `호가`, `체결`에 대한 정보를 �
 - 두 번째 파라미터는 구독할 필터를 설정하며 암호화폐의 티커를 입력합니다. 현재 버전에서는 원화 시장만을 지원합니다.
 
 ```python
-from pyupbit import WebSocketManager
+from myupbit import WebSocketManager
 
 if __name__ == "__main__":
     wm = WebSocketManager("ticker", ["KRW-BTC"])

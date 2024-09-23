@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-pyupbit.quotation_api
+myupbit.quotation_api
 
 This module provides quatation api of the Upbit API.
 """
@@ -9,7 +9,7 @@ This module provides quatation api of the Upbit API.
 import datetime
 import pandas as pd
 import time
-from pyupbit.request_api import _call_public_api
+from myupbit.request_api import _call_public_api
 
 
 def get_tickers(fiat="", is_details=False, limit_info=False, verbose=False):
